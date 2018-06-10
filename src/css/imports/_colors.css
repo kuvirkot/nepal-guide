@@ -36,6 +36,14 @@
   color: var(--black);
 }
 
+.black-70 {
+  color: var(--black-70);
+}
+
+.black-90 {
+  color: var(--black-90);
+}
+
 .bg-primary {
   background-color: var(--primary);
 }
@@ -77,4 +85,8 @@
   & :first-child {
     box-shadow: var(--spacing-small) 0 0 var(--primary), -var(--spacing-small) 0 0 var(--primary);
   }
+}
+
+.bg-lightest-blue {
+  background-color: var(--lightest-blue);
 }

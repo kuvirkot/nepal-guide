@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+<article>
+  <header class="tc-l ph3 ph4-ns pt4 pt5-ns">
+    <!-- <h1 class="f3 f2-m f-subheadline-l measure lh-title fw1 mt0"> -->
+    <h1 class="center mw8 f2 f1-l lh-title black-90 mb3">
+      {{.Title}}
+    </h1>
+    <div class="flex f6 mw7 center justify-between grey-3 mt4">
+      <time>{{ .Date.Format " 2 Jan, 2006" }}</time>
+      <time>на чтение {{ .ReadingTime }} мин.</time>
+    </div>
+    {{ if .Params.image }}
+    <figure class="pv3">
+      <picture>
+        <source media="(min-width: 80em)" srcset="{{ .Params.image }}">
+          {{ if .Params.imagemedium }}
+        <source media="(min-width: 30em)" srcset="{{ .Params.imagemedium }}">
+          {{ end }}
+          {{ if .Params.imagesmall }}
+        <source media="(min-width:20em)" srcset="{{ .Params.imagesmall }}">
+          {{ end }}
+          {{ if .Params.alt}}
+        <img src="{{ .Params.image }}" alt="{{ .Params.alt }}" class="w-100 dib mw7 br1" />
+        {{ end }}
+     </picture>
+          {{ if .Params.figcaption }}
+     <figcaption class="f6 grey-3 tc">{{ .Params.figcaption }}</figcaption>
+     {{ end }}
+    </figure>
+    {{ end }}
+
+    <p class="db lh-copy black-70 mv3 f4 f5-ns mw7 bg-lightest-blue center tl pa4 br1">
+      {{ .Description }}
+    </p>
+  </header>
+
+
+    <div class="cms mw6 center ph3 pv4">
+      {{ .Content }}
+    </div>
+ 
+
+  <div class="f6 mw6 grey-3 center">
+    {{ range $name, .Params.tags }}
+    <a class="ml2" href="/tags/{{ $name | urlize }}">#{{ $name }}</a>
+    {{ end }}
+  </div>
+
+</article>
+{{ end }}
