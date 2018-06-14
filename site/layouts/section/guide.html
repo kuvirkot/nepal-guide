@@ -5,6 +5,7 @@
 {{ partial "profile-card" .Params.profile}}
 
 {{ partial "4-up" .Params.intro }}
+
 {{ partial "4-up2" .Params.intro }}
 
 {{ with .Params.main }}
@@ -31,5 +32,7 @@
 <img src="{{ .Params.full_image }}" alt="" class="db w-100">
 
 {{ partial "table" .Params.pricing }}
+
+{{ .Content }}
 
 {{ end }}

@@ -1,6 +1,6 @@
 ---
-layout: tour-page
-weight: "2"
+# layout: tour-page
+weight: "10"
 
 title: Сплав по реке Сун Коси
 subtitle: Настоящий рафтинг с порогами до 4+ категории сложности

@@ -1,5 +1,5 @@
 ---
-layout: tour-page
+# layout: tour-page
 weight: "2"
 
 title: Землей снежного леопарда
