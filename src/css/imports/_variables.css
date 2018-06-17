@@ -37,3 +37,15 @@
 }
 
 summary{outline:none;}
+
+/* счетчик */
+body {
+    counter-reset: section;                     /* Устанавливает значение 
+                                                   счетчика, равным 0 */
+  }
+  
+  .dayNumber::before {
+    counter-increment: section;                 /* Инкрементирует счетчик*/
+    content: "День " counter(section);   /* Отображает текущее 
+                                                   значение счетчика */
+  }

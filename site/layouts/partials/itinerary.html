@@ -1,0 +1,13 @@
+{{ if .itinerary }}
+<!-- <section class="cf ph3-ns ph2 mw7 center"> -->
+<h2 class="tl f2 fw1 mw6 center bb b--grey-2 bw1">Календарный план</h2>
+{{ range .itinerary }}
+       <article class="mw6 center bb b--grey-2 bw1">
+        <h3 class="f4 fw4 mt3 lh-title"><span class="dayNumber f7 bg-lightest-blue pa1 mr2 mb1"></span>{{ .destination}} <sup class="fw4 nowrap black-70">{{.altitude}}</sup></h3>
+        <!-- <div class="f6 fw4 nowrap black-70 nt3 tr">{{.altitude}}</div> -->
+        <p class="mb3">{{ .text }}</p>
+       </article>
+
+{{ end }}
+    <!-- </section> -->
+{{ end }}

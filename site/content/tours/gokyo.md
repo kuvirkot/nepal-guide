@@ -33,4 +33,7 @@ hotelNights: xx ночей
 lodgeNights: xx ночей
 
 tags: ["треккинг", "регион Эверест"]
+
+# individual page style if need /css/name.css
+styleUrl:
 ---

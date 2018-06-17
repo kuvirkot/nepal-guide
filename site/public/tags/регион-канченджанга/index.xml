@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Регион Канченджанга on Ваш гид в Непале</title>
+    <link>/tags/%D1%80%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD-%D0%BA%D0%B0%D0%BD%D1%87%D0%B5%D0%BD%D0%B4%D0%B6%D0%B0%D0%BD%D0%B3%D0%B0/</link>
+    <description>Recent content in Регион Канченджанга on Ваш гид в Непале</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/tags/%D1%80%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD-%D0%BA%D0%B0%D0%BD%D1%87%D0%B5%D0%BD%D0%B4%D0%B6%D0%B0%D0%BD%D0%B3%D0%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>К северному и южному базовым лагерям Канченджанги</title>
+      <link>/tours/kanchenjunga-circuit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tours/kanchenjunga-circuit/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

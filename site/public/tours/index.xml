@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C высоты орлиного полета on Ваш гид в Непале</title>
+    <link>/tours/</link>
+    <description>Recent content in C высоты орлиного полета on Ваш гид в Непале</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/tours/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Эверест через Гокио и Чо-Ла пасс</title>
+      <link>/tours/gokyo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tours/gokyo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Вокруг Манаслу</title>
+      <link>/tours/manaslu-circuit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tours/manaslu-circuit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Восхождение на Айленд пик - 6,189м.</title>
+      <link>/tours/island-peak/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tours/island-peak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Восхождение на пик Мера - 6,476м.</title>
+      <link>/tours/mera-peak/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tours/mera-peak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Землей снежного леопарда</title>
+      <link>/tours/dhaulagiri-circuit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tours/dhaulagiri-circuit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>К северному и южному базовым лагерям Канченджанги</title>
+      <link>/tours/kanchenjunga-circuit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tours/kanchenjunga-circuit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Удаленные регионы Наар и Пху</title>
+      <link>/tours/pho-naar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tours/pho-naar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Сплав по реке Сун Коси</title>
+      <link>/tours/sun-kosi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tours/sun-kosi/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
