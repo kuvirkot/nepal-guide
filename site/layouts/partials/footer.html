@@ -50,7 +50,16 @@
 
 {{ partial "svg" . }}
 
+
+
+{{ if .Params.script }}
+{{ range .Params.script }}
+<script src="{{ .scriptURL }}"></script>
+{{ end }}
+{{ end }}
+
 <script src="/app.js"></script>
+
 
 </body>
 

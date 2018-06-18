@@ -1,0 +1,45 @@
+<a href="{{ .Params.map }}" data-lity data-lity-desc="Trail map of Manaslu circuit" class="">
+		<figure>
+			<picture>
+			<img src="{{ .Params.map }}" class="" alt="">
+
+		</picture>	
+		<figcaption>карта маршрута</figcaption>
+		</figure>
+		</a>
+
+<div class="siema">
+    <div ><img src="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+    <div><img src="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+    <div><img src="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+    <div><img src="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+    <div><img src="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+    <div><img src="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+    <div><img src="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+    <div><img src="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+    <div><img src="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+    <div><img src="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+    <div><img src="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+    <div><img src="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+  </div>
+<div class="mb2 w5 center tc">
+  <button class="prev btn">назад</button>
+  <button class="next btn">вперед</button>
+  <script src="/js/siema.min.js"></script>
+</div>
+
+
+<script>
+const mySiema = new Siema({
+  perPage: {
+    768: 2,
+    1024: 3,
+  },
+});
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+prev.addEventListener('click', () => mySiema.prev());
+next.addEventListener('click', () => mySiema.next());
+
+</script>

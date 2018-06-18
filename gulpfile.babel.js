@@ -41,6 +41,11 @@ gulp.task("cms-assets", () => (
     .pipe(gulp.dest("./dist/css"))
 ))
 
+gulp.task('custom-js', function() {
+  return gulp.src('./src/js/custom/*.js')
+   .pipe(gulp.dest('./dist/js'));
+});
+
 gulp.task("js", (cb) => {
   const myConfig = Object.assign({}, webpackConfig);
 
@@ -71,7 +76,7 @@ gulp.task("svg", () => {
     .pipe(gulp.dest("site/layouts/partials/"));
 });
 
-gulp.task("server", ["hugo", "css", "cms-assets", "js", "svg"], () => {
+gulp.task("server", ["hugo", "css", "cms-assets", "js", "custom-js", "svg"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"

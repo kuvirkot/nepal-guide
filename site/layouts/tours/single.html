@@ -152,7 +152,21 @@
 
 
 <div class="cf mw9 pa5-l pa4-m pa3 center br1">
-	<div class="fl w-100 w-100-m w-40-l tc mv3 mv0-l"><img src="/img/tours/everest-map-1280px.jpg" class="w-100" alt=""></div>
+	<div class="fl w-100 w-100-m w-40-l tc mv3 mv0-l ease-in-out a6 triple">
+
+		<a href="{{ .Params.map }}" data-lity data-lity-desc="Trail map of Manaslu circuit" class="">
+		<figure>
+			<picture>
+			<img src="{{ .Params.map }}" class="" alt="">
+
+		</picture>	
+		<figcaption>карта маршрута</figcaption>
+		</figure>
+		</a>
+
+
+
+		</div>
 	<div class="fl w-100 w-100-m w-60-l tl">{{ partial "itinerary" .Params }}</div>
 </div>
 

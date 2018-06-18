@@ -29,7 +29,7 @@ export default {
     cms: ["./js/cms"]
   },
   output: {
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "dist/"),
     publicPath: "/",
     filename: "[name].js"
   },

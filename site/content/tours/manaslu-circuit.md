@@ -1,5 +1,14 @@
 ---
 # layout: tour-page
+
+# individual page style if need /css/name.css
+style:
+  - styleURL: /css/lity.css
+
+script:
+  - scriptURL: /js/zepto.min.js
+  - scriptURL: /js/lity.min.js
+
 weight: "2"
 
 title: Вокруг Манаслу
@@ -40,6 +49,9 @@ lodgeNights: xx ночей
 tentNights: x3 ночей
 
 tags: ["треккинг", "регион Манаслу", "регион Аннапурна"]
+
+# Иллюстрации
+map: /img/tours/manaslu-map-1200.jpg
 
 # Календарный план
 

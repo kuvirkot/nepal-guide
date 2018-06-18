@@ -2,8 +2,13 @@
 
 	<title>{{ .Title }}</title>
 	<link rel="stylesheet" href="/css/main.css" />
-	{{ if .Params.styleUrl }}
-	<link rel="stylesheet" href="{{ .Params.styleURL }}" />    <!-- individual page style if need -->
+	<!-- {{ if .Params.styleUrl }}
+	<link rel="stylesheet" href="{{ .Params.styleURL }}" />    
+	 {{ end }} -->
+	 {{ if .Params.style }}
+	 {{ range .Params.style }}
+	 <link rel="stylesheet" href="{{ .styleURL }}" />  
+	 {{ end }}
 	 {{ end }}
 
 	<meta charset="utf-8">
