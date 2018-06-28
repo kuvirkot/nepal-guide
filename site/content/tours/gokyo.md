@@ -137,8 +137,8 @@ itinerary:
     altitude: 
     text: 
 
-reservedays: 1 запасной день
-reservedaysuse: на случай нелетной погоды при вылете из Луклы.
+reservedays: "+1"
+reservedaysuse: запасной день на случай нелетной погоды при вылете из Луклы.
 
 
     

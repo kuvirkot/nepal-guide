@@ -158,11 +158,12 @@
 <div class="mw7 center ph3 pv4">{{ partial "text-section" . }}</div>
 {{ end }}
 
-{{ partial "table" .Params.pricing }}
+
 
 {{ partial "list-Inline" .Params }}
 
 <aside id="illustration">
+{{ if .Params.map}}
 <figure class="tc pa3">
 <figcaption class="f5 grey-3 tc">Схема маршрута</figcaption>
 <picture>
@@ -175,7 +176,9 @@ alt="Наглядная схема маршрута"
 class=""/>
 </picture>
 </figure>
+{{end}}
 
+{{ if .Params.altitude}}
 <figure class="center mw7 pa3">
 <figcaption class="f5 grey-3 tc">Высотный график</figcaption>
 <picture>
@@ -187,13 +190,14 @@ alt="Высотный график"
 class=""/>
 </picture>
 </figure>
+{{end}}
 </aside>
 
 <div class="mw7 center ph3 pv4">
 		{{ partial "itinerary" .Params }}
 	</div>
 
-
+<!-- {{ partial "table" .Params.pricing }} -->
 
 <div class="cms mw7 center ph3 pv4">
 	{{ .Content }}
