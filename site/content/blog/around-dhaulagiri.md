@@ -30,7 +30,7 @@ tags: ["экспедиция", "регион Аннапурна", "регион 
 <picture>
   <source media="(min-width: 80em)" srcset="/img/blog/2018/along-river-to-gorge-660px.jpg">
   <source media="(min-width: 30em)" srcset="/img/blog/2018/along-river-to-gorge-500px.jpg">
-  <source media="(min-width: 20em)" srcset="/img/blog/2018/along-river-to-gorge-300px.jpg">
+  <source media="(min-width:  1em)" srcset="/img/blog/2018/along-river-to-gorge-300px.jpg">
  <img src="/img/blog/2018/along-river-to-gorge-660px.jpg" alt="вид пути вдоль горной реки" class="br1 w-100"/>
 </picture>
 <figcaption class="f6 grey-3 tc">Подьем вдоль реки Мьягди Кхола к ущелью Чхонбардан</figcaption>
@@ -48,7 +48,7 @@ tags: ["экспедиция", "регион Аннапурна", "регион 
 <picture>
 <source media="(min-width: 80em)" srcset="/img/blog/2018/alpine-meadow-660px.jpg">
 <source media="(min-width: 30em)" srcset="/img/blog/2018/alpine-meadow-500px.jpg">
-<source media="(min-width: 20em)" srcset="/img/blog/2018/alpine-meadow-300px.jpg">
+<source media="(min-width:  1em)" srcset="/img/blog/2018/alpine-meadow-300px.jpg">
                                 <img src="/img/blog/2018/alpine-meadow-660px.jpg" 
 alt="ладшафт Альпийских лугов" 
 class="br1 w-100"/>
@@ -83,7 +83,7 @@ class="br1 w-100"/>
 <picture>
 <source media="(min-width: 80em)" srcset="/img/blog/2018/muri-village-660px.jpg">
 <source media="(min-width: 30em)" srcset="/img/blog/2018/muri-village-500px.jpg">
-<source media="(min-width: 20em)" srcset="/img/blog/2018/muri-village-300px.jpg">
+<source media="(min-width:  1em)" srcset="/img/blog/2018/muri-village-300px.jpg">
                                 <img src="/img/blog/2018/muri-village-660px.jpg" 
 alt="вид деревни Мюри" 
 class="br1 w-100"/>

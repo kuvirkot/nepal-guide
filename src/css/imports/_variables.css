@@ -12,16 +12,15 @@
 	--lightest-blue: #cdecff;
 	--black-90: rgba(0, 0, 0, .9);
 	--black-70: rgba(0, 0, 0, .7);
-
 	/* Typography */
-	--font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+	/* --font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial,  */
+	--font-family: -apple-system, helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
 	--line-height: 1.5;
 	--font-size: 18px;
 	--font-size-m: 20px;
 	--font-size-l: 22px;
 	--body-font-weight: 400;
 	--bold-font-weight: 700;
-	
 	/* Sizing */
 	--spacing-none: 0;
 	--spacing-extra-small: .25rem;
@@ -36,24 +35,29 @@
 	--hover-transition: all 150ms ease;
 }
 
-summary{outline:none;}
+summary {
+	outline: none;
+}
 
 /* счетчик */
-body {
-    counter-reset: section;                     /* Устанавливает значение 
-                                                   счетчика, равным 0 */
-  }
-  
-  .dayNumber::before {
-    counter-increment: section;                 /* Инкрементирует счетчик*/
-    content: "День " counter(section);   /* Отображает текущее 
-                                                   значение счетчика */
-  }
 
-  .lightbox {
+body {
+	counter-reset: section;
+	/* Устанавливает значение 
+                                                   счетчика, равным 0 */
+}
+
+.dayNumber::before {
+	counter-increment: section;
+	/* Инкрементирует счетчик*/
+	content: "день " counter(section);
+	/* Отображает текущее 
+                                                   значение счетчика */
+}
+
+.lightbox {
 	/** Default lightbox to hidden */
 	display: none;
-
 	/** Position and style */
 	position: fixed;
 	z-index: 999;
@@ -62,11 +66,11 @@ body {
 	text-align: center;
 	top: 0;
 	left: 0;
-	background: rgba(0,0,0,0.8);
+	background: rgba(0, 0, 0, 0.8);
 }
 
 .lightbox>a {
-color: white;
+	color: white;
 }
 
 .lightbox img {
@@ -78,9 +82,72 @@ color: white;
 }
 
 .lightbox:target {
-	/** Remove default browser outline */
 	outline: none;
-
-	/** Unhide lightbox **/
 	display: block;
+}
+
+table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+/* .altitude {
+	font-size: 0.6rem;
+} */
+
+/* table.itinerary tr.stripe-dark:nth-child(odd) {
+	background-color: rgba(0, 0, 0, 0.1);
+	background-color: var(--lightest-blue);
+} */
+
+table.itinerary tr {
+	border-bottom: 1px solid #ddd;
+}
+
+td .dayNumber {
+	background-color: var(--lightest-blue);
+}
+
+@media screen and (max-width: 50em) {
+	table {
+		border: 0;
+	}
+	table.itinerary thead {
+		border: none;
+		clip: rect(0 0 0 0);
+		position: absolute;
+	}
+	table.itinerary td {
+		/* border-bottom: 1px solid #ddd; */
+		display: block;
+		text-align: left;
+	}
+
+	td .dayNumber {
+		/* font-weight: bold; */
+		padding: 5px;
+	}
+	table.itinerary td::before {
+		content: attr(data-label);
+		float: left;
+		color: var(--black-70);
+		margin-right: 10px;
+	}
+	/* table.itinerary td.colon::before {
+		content: attr(data-label)":";
+	} */
+	table.itinerary td:last-child {
+		border-bottom: 0;
+	}
+	table.itinerary tr.stripe-dark:nth-child(odd) {
+		background-color: rgba(0, 0, 0, 0);
+		border-bottom: 1px solid #ddd;
+		}
+	table tr.stripe-dark:nth-child(even) {
+	border-bottom: 1px solid #ddd;
+	}
+
+	td .dayNumber {
+		background-color: var(--lightest-blue);
+	}
 }

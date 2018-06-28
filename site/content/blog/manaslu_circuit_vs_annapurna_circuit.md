@@ -29,7 +29,7 @@ tags: ["треккинг", "регион Аннапурна", "регион Ма
 <picture>
   <source media="(min-width: 80em)" srcset="/img/blog/2018/annapurna-around-waterfall-660px.jpg">
   <source media="(min-width: 30em)" srcset="/img/blog/2018/annapurna-around-waterfall-500px.jpg">
-  <source media="(min-width: 20em)" srcset="/img/blog/2018/annapurna-around-waterfall-300px.jpg">
+  <source media="(min-width:  1em)" srcset="/img/blog/2018/annapurna-around-waterfall-300px.jpg">
  <img src="/img/blog/2018/annapurna-around-waterfall-660px.jpg" alt="водопад на треккинге вокруг Аннапурны" class="br1 w-100"/>
 </picture>
 <figcaption class="f6 grey-3 tc">Справа от водопада, под отвесом скалы находятся улья диких пчел.</figcaption>
@@ -61,7 +61,7 @@ tags: ["треккинг", "регион Аннапурна", "регион Ма
 <picture>
    <source media="(min-width: 80em)" srcset="/img/blog/2018/gorge-manaslu-trekking-660px.jpg">
    <source media="(min-width: 30em)" srcset="/img/blog/2018/gorge-manaslu-trekking-500px.jpg">
-   <source media="(min-width: 20em)" srcset="/img/blog/2018/gorge-manaslu-trekking-300px.jpg">
+   <source media="(min-width:  1em)" srcset="/img/blog/2018/gorge-manaslu-trekking-300px.jpg">
  <img src="/img/blog/2018/gorge-manaslu-trekking-660px.jpg" alt="фрагмент тропы вдоль живописной реки" class="br1 w-100"/>
 </picture>
 <figcaption class="f6 grey-3 tc">Живописная тропа на треккинге вокруг Манаслу</figcaption>

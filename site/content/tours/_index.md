@@ -1,7 +1,17 @@
 ---
 title: C высоты орлиного полета
-# subtitle: "#Эверест, #Аннапурна, #Канченджанга, #Макалу, #Манаслу, #Мера пик, #Айленд пик, #Лобуче, #Долпо, #Дармодар, #Мустанг и другие Гималаи"
-image: /img/eagle-jumbotron.png
+subtitle: "#Эверест, #Аннапурна, #Канченджанга, #Макалу, #Манаслу, #Мера пик, #Айленд пик, #Лобуче, #Долпо, #Дармодар, #Мустанг и другие Гималаи"
+# Head banner
+  # 600px image
+image: /img/jumbotron/eagle-1440x520.png
+  # 1000px image
+imageM: /img/jumbotron/eagle-1000x520.png
+  # 1440px image
+imageL: /img/jumbotron/eagle-1440x520.png
+figcaption: "восьмитысячник Манаслу"
+alt: "Манаслу: главная (8 163 м.) и восточная (7 992 м.) вершины."
+
+
 tours:
   - heading: Классические ти-хаус треккинги
     text: Coffee is a small tree or shrub that grows in the forest

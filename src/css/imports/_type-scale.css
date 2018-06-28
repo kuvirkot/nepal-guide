@@ -5,6 +5,7 @@
 .f5 { font-size: var(--spacing-medium); }
 .f6 { font-size: .875rem; }
 .f7 { font-size: .75rem; }
+.f8 { font-size: .625rem; }
 
 @media (--breakpoint-not-small) {
   .f-6-ns,

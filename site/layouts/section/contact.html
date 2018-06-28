@@ -12,6 +12,7 @@
 				<div>
 					<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
 					<p>{{ .text }}</p>
+					
 				</div>
 			{{ end }}
 		</div>
@@ -19,6 +20,21 @@
 		{{ partial "contact-form" . }}
 
 	</div>
+
+	<div class="center mw6 pv3">
+			<h3 id="contact" class="f4 b lh-title mb2 tc">Другие варианты связи</h3>
+			<ul class="mhn2 tc primary">
+				{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
+				{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
+				{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram") }}
+				{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }}
+				{{ partial "social-icon" (dict "link" "#" "svg" "icons-gmail") }}
+				{{ partial "social-icon" (dict "link" "#" "svg" "icons-viber") }}
+			</ul>
+		</div>
+
 </div>
+
+
 
 {{ end }}

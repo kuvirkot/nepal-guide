@@ -16,7 +16,7 @@ tags: ["регион Эверест", "акклиматизация", "Гоки�
 <picture>
 <source media="(min-width: 80em)" srcset="/img/blog/2018/pheriche-aid-post-660px.jpg">
 <source media="(min-width: 30em)" srcset="/img/blog/2018/pheriche-aid-post-500px.jpg">
-<source media="(min-width: 20em)" srcset="/img/blog/2018/pheriche-aid-post-300px.jpg">
+<source media="(min-width:  1em)" srcset="/img/blog/2018/pheriche-aid-post-300px.jpg">
                                 <img src="/img/blog/2018/pheriche-aid-post-660px.jpg" 
 alt="здание центра мед помощи" 
 class="br1 w-100"/>

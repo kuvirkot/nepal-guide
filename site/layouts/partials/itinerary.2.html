@@ -1,0 +1,63 @@
+{{ if .itinerary }}
+<h2 class="tl f5 grey-3 center bb b--grey-2 bw1">Календарный план маршрута
+    <small class="f7"> (из Катманду в Катманду)</small>
+</h2>
+<div class="pa4">
+    <div class="overflow-auto">
+        <table class="f7 center itinerary" cellspacing="0">
+            <thead>
+                <tr class="stripe-dark">
+                    <th scope="col" class="tl pa1 w-10 bg-white">
+                        день
+                    </th>
+                    <th scope="col" class="tl pa1  w-30 bg-white">
+                        маршрут
+                    </th>
+                    <th scope="col" class="tl pa1 bg-white">
+                        высота
+                    </th>
+                    <th scope="col" class="tl pa1 bg-white">
+                        активность
+                    </th>
+                    <th scope="col" class="tl pa1 bg-white">
+                        ходовое время
+                    </th>
+                    <th scope="col" class="tl pa1 bg-white">
+                        размещение
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody class="lh-copy">
+                    {{ range .itinerary }}
+                <tr class="stripe-dark">
+                    <td class="pv2 ph1">
+                        <span class="dayNumber color-bg"></span>
+                        </th>
+                    </td>
+                    <td data-label="маршрут" class="pv2 ph1 colon">
+                        <span class="no-wrap">{{ .destination}}</span>
+                    </td>
+                    <td data-label="высота" class="pv2 ph1 colon">
+                        <small class="altitude">{{.altitude}}</small>
+                    </td>
+                    <td data-label="активность" class="pv2 ph1 colon">
+                        {{.activity}}
+                    </td>
+
+                    <td data-label="ходовое время" class="pv2 ph1 colon">
+                        {{.duration}}
+                    </td>
+
+                    <td data-label="размещение" class="pv2 ph1 colon">
+                        {{.accommodation}}
+                    </td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+{{ end }}

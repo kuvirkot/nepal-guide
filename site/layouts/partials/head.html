@@ -11,11 +11,41 @@
 	 {{ end }}
 	 {{ end }}
 
+	 {{ if .Params.image }}
+	 <style type="text/css">
+		
+	/* 600px image */
+		.head-banner-bg {
+			background-image: url('{{ .Params.image }}');
+		} 
+  	
+	  /* 1000px image	   */
+		{{ if .Params.imageM }}
+	  @media (min-width: 600px) {
+		  .head-banner-bg {
+			background-image: url('{{ .Params.imageM }}');
+		  }
+		}
+	  {{end}}
+    
+	/* 1440px image	   */
+	  {{ if .Params.imageL }}
+		@media (min-width: 1000px) {
+		  .head-banner-bg {
+			background-image: url('{{ .Params.imageL }}');
+		  }
+		}
+		{{end}}
+	  </style>
+
+{{end}}
+
+
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet"> -->
 
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/logo/apple-touch-icon.png">
@@ -32,4 +62,5 @@
 	<meta property="og:image" content="/logo/img/og-image.jpg">
 
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 </head>

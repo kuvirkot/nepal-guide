@@ -1,7 +1,15 @@
 ---
 title: Трекинги, Экспедиции, Восхождения
 subtitle: Ваш горный гид в непальских Гималаях
-image: /img/home-jumbotron.png
+# Head banner
+  # 600px image
+image:  /img/jumbotron/namaste-guide-600x520.png
+  # 1000px image
+imageM: /img/jumbotron/namaste-guide-1000x520.png
+  # 1440px image
+imageL: /img/jumbotron/namaste-guide-1400x520.png
+figcaption: "восьмитысячник Манаслу"
+alt: "Манаслу: главная (8 163 м.) и восточная (7 992 м.) вершины."
 profile:
       image: img/guide-profile.png
       heading: Здравствуйте, уважаемые любители гор!

@@ -1,16 +1,25 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title  "subtitle" .Params.subtitle) }}
+{{ partial "jumbotron" (dict "title" .Title  "subtitle" .Params.subtitle) }}
 
 <div class="mw9 center">
+<h2 class="f2 b lh-title mb3 tc">Подтвержденные</h2>
+
+    <ul class="flex-ns flex-wrap mhn1-ns pa3">
+        {{ range where .Pages "Params.status" "confirmed" }}
+               <div class="w-50-ns ph1-ns flex">
+                               {{ .Render "li-tours"}}
+                  </div>
+                  {{end}}
+      </ul>
+      <h2 class="f2 b lh-title mb3 tc">Не подтвержденные</h2>
   <ul class="flex-ns flex-wrap mhn1-ns pa3">
-    {{ range (.Paginator 20).Pages }}
-          <div class="w-50-ns ph1-ns flex">
-            {{ .Render "li-tours"}}
-          </div>
-      {{ end }}
+    {{ range where .Pages "Params.status" "unconfirmed" }}
+           <div class="w-50-ns ph1-ns flex">
+                           {{ .Render  "li-tours"}}
+              </div>
+              {{end}}
   </ul>
-  <!-- {{ partial "pagination" . }} -->
 </div>
 
 
