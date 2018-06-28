@@ -9,7 +9,7 @@ style:
 script:
   - scriptURL: /js/zepto.min.js
   - scriptURL: /js/lity.min.js
-  # - scriptURL: /js/siema.min.js
+  - scriptURL: /siema.js
   
 title: Ваш горный гид в непальских Гималаях
 subtitle: Трекинги, Экспедиции, Восхождения
