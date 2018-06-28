@@ -22,8 +22,8 @@ if (process.env.DEBUG) {
 
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
-gulp.task("build", ["css", "js", "cms-assets", "hugo"]);
-gulp.task("build-preview", ["css", "js", "cms-assets", "hugo-preview"]);
+gulp.task("build", ["css", "js", "custom-js", "cms-assets", "hugo"]);
+gulp.task("build-preview", ["css", "js", "custom-js", "cms-assets", "hugo-preview"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
