@@ -169,11 +169,11 @@ pricing:
 # layout: tour-page
 # individual page style if need /css/name.css
 style:
-  - styleURL: /css/lity.css
+  # - styleURL: /css/lity.css
 
 script:
-  - scriptURL: /js/zepto.min.js
-  - scriptURL: /js/lity.min.js
+  # - scriptURL: /js/zepto.min.js
+  # - scriptURL: /js/lity.min.js
 
 ---
 
