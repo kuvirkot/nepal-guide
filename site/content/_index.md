@@ -15,8 +15,8 @@ profile:
       heading: Здравствуйте, уважаемые любители гор!
       text: Много лет я организую трекинги, экспедиции и восхождения в непальских Гималаях. Если Вы ищете надежного и опытного гида, с удовольствием помогу организовать Ваше путешествие и приглашаю к участию в авторских турах.
 intro:
-    heading: Why Kaldi?
-    text: "Kaldi is the coffee store for everyone who believes that great coffee shouldn't just taste good, it should do good too. We source all of our beans directly from small scale sustainable farmers and make sure part of the profits are reinvested in their communities."
+    heading: Путешествия любого уровня сложности!
+    text: "Увлекательные путешествия популярными маршрутами, экспедиции нехожеными тропами и альпинистские восхождения в непальских Гималаях."
 blurb:
     heading: Why Kaldi?
     text: "Kaldi is the coffee store for everyone who believes that great coffee shouldn't just taste good, it should do good too. We source all of our beans directly from small scale sustainable farmers and make sure part of the profits are reinvested in their communities."
@@ -26,10 +26,15 @@ heroText:
     btntext: Каталог туров весна-осень 2018
     btnlink: tours
 guide:
-    - image: img/illustrations-coffee.svg
-      text: "We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our blog or contact us directly for current availability."
-    - image: /img/illustrations-coffee-gear.svg
-      text: "We offer a small, but carefully curated selection of brewing gear and tools for every taste and experience level. No matter if you roast your own beans or just bought your first french press, you’ll find a gadget to fall in love with in our shop."
+    - image: /img/svg/trekking.svg
+      text: "Классические ти-хаус треккинги. Путешествие по горам с комфортом. Проходят в зонах с развитой туристической инфраструктурой. Ночевки и питание в гостевых домиках."
+    - image: /img/svg/expedition.svg
+      text: "Путешествия в удаленные регионы. В стороне от шумных троп. Часть пути обязательно проходится автономно, с палатками и кухней."
+    - image: /img/svg/climbing.svg
+      text: "Популярные вершины и редко посещаемые пики. Прекрасная возможность приобщиться к альпинизму в больших горах - совершить восхождение на шеститысячник в Непале."
+    - image: /img/svg/alpinism.svg
+      text: Тренировки по альпинизму. Функциональная акклиматизация для высотных восхождений. На естественном рельефе, в горах, с видами на Эверест и другие Гималаи. 
+    
 tours:
     heading: Our tours
     text: Coffee is an amazing part of human culture but it has a dark side too – one of colonialism and mindless abuse of natural resources and human lives. We want to turn this around and return the coffee trade to the drink’s exhilarating, empowering and unifying nature.
