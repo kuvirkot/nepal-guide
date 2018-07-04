@@ -10,4 +10,4 @@
   [[redirects]]
   from = "https://nepal-guide.netlify.com/*"
   to = "https://www.nepal-guide.ru:splat"
-  status = 301!
+  status = 301
