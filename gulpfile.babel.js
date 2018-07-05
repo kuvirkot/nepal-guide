@@ -11,6 +11,7 @@ import svgstore from "gulp-svgstore";
 import svgmin from "gulp-svgmin";
 import inject from "gulp-inject";
 import cssnano from "cssnano";
+import uncss from "postcss-uncss";
 
 const browserSync = BrowserSync.create();
 const hugoBin = `./bin/hugo.${process.platform === "win32" ? "exe" : process.platform}`;
@@ -19,8 +20,6 @@ const defaultArgs = ["-d", "../dist", "-s", "site"];
 if (process.env.DEBUG) {
   defaultArgs.unshift("--debug")
 }
-
-var uncss = require('postcss-uncss');
 
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
