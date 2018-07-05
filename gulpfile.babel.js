@@ -20,10 +20,12 @@ if (process.env.DEBUG) {
   defaultArgs.unshift("--debug")
 }
 
+var uncss = require('postcss-uncss');
+
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
-gulp.task("build", ["css", "js", "custom-js", "cms-assets", "hugo"]);
-gulp.task("build-preview", ["css", "js", "custom-js", "cms-assets", "hugo-preview"]);
+gulp.task("build", ["css", "js", "custom-js", "cms-assets", "hugo", "uncss"]);
+gulp.task("build-preview", ["css", "js", "custom-js", "cms-assets", "hugo-preview", "uncss"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
@@ -76,7 +78,18 @@ gulp.task("svg", () => {
     .pipe(gulp.dest("site/layouts/partials/"));
 });
 
-gulp.task("server", ["hugo", "css", "cms-assets", "js", "custom-js", "svg"], () => {
+gulp.task('uncss', function () {
+  var plugins = [
+      uncss({
+          html: ['./dist/index.html','./dist/*/index.html','./dist/*/*/index.html']
+      }),
+  ];
+  return gulp.src('./dist/css/*.css')
+      .pipe(postcss(plugins))
+      .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task("server", ["hugo", "css", "cms-assets", "js", "custom-js", "svg","uncss"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
