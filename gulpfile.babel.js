@@ -11,6 +11,7 @@ import svgstore from "gulp-svgstore";
 import svgmin from "gulp-svgmin";
 import inject from "gulp-inject";
 import cssnano from "cssnano";
+import uncss from "postcss-uncss";
 
 const browserSync = BrowserSync.create();
 const hugoBin = `./bin/hugo.${process.platform === "win32" ? "exe" : process.platform}`;
@@ -22,8 +23,8 @@ if (process.env.DEBUG) {
 
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
-gulp.task("build", ["css", "js", "cms-assets", "hugo"]);
-gulp.task("build-preview", ["css", "js", "cms-assets", "hugo-preview"]);
+gulp.task("build", ["css", "js", "custom-js", "cms-assets", "hugo", "uncss"]);
+gulp.task("build-preview", ["css", "js", "custom-js", "cms-assets", "hugo-preview", "uncss"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
@@ -32,7 +33,7 @@ gulp.task("css", () => (
       cssnext(),
       cssnano(),
     ]))
-    .pipe(gulp.dest("./dist/css"))
+    .pipe(gulp.dest("./src/css/css-temp"))
     .pipe(browserSync.stream())
 ));
 
@@ -40,6 +41,11 @@ gulp.task("cms-assets", () => (
   gulp.src("./node_modules/netlify-cms/dist/*.{woff,eot,woff2,ttf,svg,png}")
     .pipe(gulp.dest("./dist/css"))
 ))
+
+gulp.task('custom-js', function() {
+  return gulp.src('./src/js/custom/*.js')
+   .pipe(gulp.dest('./dist/js'));
+});
 
 gulp.task("js", (cb) => {
   const myConfig = Object.assign({}, webpackConfig);
@@ -57,7 +63,7 @@ gulp.task("js", (cb) => {
 
 gulp.task("svg", () => {
   const svgs = gulp
-    .src("site/static/img/icons-*.svg")
+    .src("site/static/img/svg/svg-social-icons/icons-*.svg")
     .pipe(svgmin())
     .pipe(svgstore({inlineSvg: true}));
 
@@ -69,6 +75,17 @@ gulp.task("svg", () => {
     .src("site/layouts/partials/svg.html")
     .pipe(inject(svgs, {transform: fileContents}))
     .pipe(gulp.dest("site/layouts/partials/"));
+});
+
+gulp.task('uncss', function () {
+  var plugins = [
+      uncss({
+          html: ['./dist/*.html','./dist/*/*.html','./dist/*/*/*.html']
+      }),
+  ];
+  return gulp.src('./src/css/css-temp/main.css')
+      .pipe(postcss(plugins))
+      .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task("server", ["hugo", "css", "cms-assets", "js", "svg"], () => {
