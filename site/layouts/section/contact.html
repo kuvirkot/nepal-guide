@@ -3,7 +3,7 @@
 <div class="ph3 bg-off-white">
 	<div class="center mw6 pv3">
 
-		<img src="{{ .Params.logo }}" alt="" class="db w4 center pv4">
+		<img src="{{ .Params.logo }}" alt="логотип сайта Ваш гид в Непале - wwww.nepal-guide.ru" class="db w4 center pv4">
 
 		{{ .Content }}
 
@@ -12,6 +12,7 @@
 				<div>
 					<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
 					<p>{{ .text }}</p>
+					
 				</div>
 			{{ end }}
 		</div>
@@ -19,6 +20,29 @@
 		{{ partial "contact-form" . }}
 
 	</div>
+
+	<div class="center mw6 pv3">
+			<h3 id="contact" class="f4 b lh-title mb2 tc">Другие варианты связи</h3>
+			<ul class="mhn2 tc primary">
+			{{ partial "social-icon" (dict "link" "mailto:alexey@uliyanov.com" "svg" "icons-gmail") }}
+				<li class="dib ph2 raise">
+					<a href="viber://chat?number=79107981028" class="link bg-white black db relative br-100 pa2">
+					  <svg width="16px" height="16px" class="db">
+						<use xlink:href="#icons-viber"></use>
+					  </svg>
+					</a>
+				  </li>
+				{{ partial "social-icon" (dict "link" "https://wa.me/79107981028" "svg" "icons-whatsapp") }}
+				{{ partial "social-icon" (dict "link" "https://www.facebook.com/alexeyulyanov.ru" "svg" "icons-facebook") }}
+				{{ partial "social-icon" (dict "link" "https://vk.com/kuvirkot" "svg" "icons-vk") }}
+							{{ partial "social-icon" (dict "link" "https://t.me/joinchat/EtUF_w4R_pVz6-RETGwd4g" "svg" "icons-telegram") }}
+
+
+			</ul>
+		</div>
+
 </div>
+
+
 
 {{ end }}

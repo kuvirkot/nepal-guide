@@ -1,0 +1,21 @@
+<div class="bg-grey-2 pv4">
+	<div class="ph3 mw7 center">
+		<h2 id="cooperation" class="f2 b lh-title mb2">{{.heading2}}</h2>
+		<p class="mb4 mw6">{{.description2}}</p>
+
+		<div class="flex-ns flex-wrap mhn2-ns mb3">
+			{{ range .offers2 }}
+				<div class="ph2-ns w-50-ns mb4">
+				   <h3 class="f3 b lh-title mb1">{{.heading}}</h3>
+				   <svg class="primary center db mb3">
+					<use xlink:href="{{ .image }}"></use>
+		  </svg>
+					<p>{{ .text }}</p>
+				</div>
+			{{ end }}
+		</div>
+		<div class="tc">
+			<a href="/tours" class="btn raise">Туры</a>
+		  </div>
+	</div>
+</div>

@@ -9,18 +9,18 @@
 	--grey-3: rgba(89, 87, 86, 1);
 	--grey-4: rgba(66, 64, 64, 1);
 	--black: rgba(43, 37, 35, 1);
-
+	--lightest-blue: #cdecff;
+	--black-90: rgba(0, 0, 0, .9);
+	--black-70: rgba(0, 0, 0, .7);
 	/* Typography */
-	--font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+	/* --font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial,  */
+	--font-family: -apple-system, helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
 	--line-height: 1.5;
-
 	--font-size: 18px;
 	--font-size-m: 20px;
 	--font-size-l: 22px;
-
 	--body-font-weight: 400;
 	--bold-font-weight: 700;
-
 	/* Sizing */
 	--spacing-none: 0;
 	--spacing-extra-small: .25rem;
@@ -30,7 +30,6 @@
 	--spacing-extra-large: 4rem;
 	--spacing-extra-extra-large: 8rem;
 	--spacing-extra-extra-extra-large: 16rem;
-
 	/* Miscelaneous */
 	--border-radius: .25rem;
 	--hover-transition: all 150ms ease;
