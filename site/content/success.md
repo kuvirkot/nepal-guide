@@ -1,6 +1,6 @@
 ---
 # type: section
-layout: blank
+layout: success
 title: "Сообщение получено - Ваш гид в Непале"
 logo: "/img/svg/yeti.svg"
 contact_entries:

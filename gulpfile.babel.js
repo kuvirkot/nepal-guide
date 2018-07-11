@@ -33,7 +33,7 @@ gulp.task("css", () => (
       cssnext(),
       cssnano(),
     ]))
-    .pipe(gulp.dest("./dist/css"))
+    .pipe(gulp.dest("./src/css/css-temp"))
     .pipe(browserSync.stream())
 ));
 
@@ -63,7 +63,7 @@ gulp.task("js", (cb) => {
 
 gulp.task("svg", () => {
   const svgs = gulp
-    .src("site/static/img/icons-*.svg")
+    .src("site/static/img/svg/svg-social-icons/icons-*.svg")
     .pipe(svgmin())
     .pipe(svgstore({inlineSvg: true}));
 
@@ -80,10 +80,10 @@ gulp.task("svg", () => {
 gulp.task('uncss', function () {
   var plugins = [
       uncss({
-          html: ['./dist/index.html','./dist/*/index.html','./dist/*/*/index.html']
+          html: ['./dist/*.html','./dist/*/*.html','./dist/*/*/*.html']
       }),
   ];
-  return gulp.src('./dist/css/*.css')
+  return gulp.src('./src/css/css-temp/main.css')
       .pipe(postcss(plugins))
       .pipe(gulp.dest('./dist/css'));
 });
@@ -96,7 +96,7 @@ gulp.task("server", ["hugo", "css", "cms-assets", "js", "custom-js", "svg","uncs
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
   gulp.watch("./src/css/**/*.css", ["css"]);
-  gulp.watch("./site/static/img/icons-*.svg", ["svg"]);
+  gulp.watch("./site/static/img/svg/svg-social-icons/icons-*.svg", ["svg"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });
 

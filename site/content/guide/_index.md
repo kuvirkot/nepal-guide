@@ -10,7 +10,7 @@ image: /img/jumbotron/guide-ama-dablam-jumbotron.png
 #   anyone.
 
 profile:
-  image: /img/guide-profile.png
+  image: /img/guide/guide-profile.png
   heading: Здравствуйте, уважаемые любители гор!
   text: Много лет я организую трекинги, экспедиции и восхождения в непальских Гималаях. Если Вы ищете надежного и опытного гида, с удовольствием помогу организовать Ваше путешествие и приглашаю к участию в авторских турах.
 intro:
@@ -19,27 +19,27 @@ intro:
     
   offers:
     - heading: Треккинги
-      image: /img/svg/trekking.svg
+      image: /img/svg/sprite-guide.svg#trekking-couple
       text: Классические ти-хаус треккинги. Путешествие по горам с комфортом. Проходят в зонах с развитой туристической инфраструктурой. Ночевки и питание в гостевых домиках.
           
     - heading: Экспедиции
-      image: /img/svg/expedition.svg
+      image: /img/svg/sprite-guide.svg#expedition
       text: Путешествия в удаленные регионы. В стороне от шумных троп. Часть пути обязательно проходится автономно, с палатками и кухней.
     
     - heading: Восхождения
-      image: /img/svg/climbing.svg
+      image: /img/svg/sprite-guide.svg#climbing
       text: Популярные вершины и редко посещаемые пики. Прекрасная возможность приобщиться к альпинизму в больших горах - совершить восхождение на шеститысячник в Непале.
 
     - heading: Тренировки
-      image: /img/svg/alpinism.svg
+      image: /img/svg/sprite-guide.svg#alpinism
       text: Тренировки по альпинизму. Функциональная акклиматизация для высотных восхождений. На естественном рельефе, в горах, с видами на Эверест и другие Гималаи. 
 
     - heading: Вертолетные экскурсии
-      image: /img/svg/helicopter.svg
+      image: /img/svg/sprite-guide.svg#helicopter
       text: "Становятся все популярней и доступней экскурсии и заброска на вертолете. Среди наиболее востребованных направлений: базовый лагерь Аннапурны, базовый лагерь Эвереста."
           
     - heading: Рафтинг
-      image: /img/svg/rafting.svg
+      image: /img/svg/sprite-guide.svg#rafting
       text: Бурные гималайские реки дарят не меньше положительных эмоций чем заснеженные вершины. Сплав может быть самостоятельным многодневным туром или частью комбинированного путешествия.
 
   heading2: Варианты сотрудничества
@@ -47,19 +47,19 @@ intro:
 
   offers2:
     - heading: Участие в плановых турах
-      image: /img/svg/calendar.svg
+      image: /img/svg/sprite-guide.svg#calendar
       text: Программы туров и даты проведения опубликованы в разеделе "Туры". Выбирайте путешествие по вкусу и присоединяйтесь.
  
     - heading: Сезонный гид
-      image: /img/svg/guide-namaste.svg
+      image: /img/svg/sprite-guide.svg#guide-namaste
       text: Туристическим компаниям - услуги сезонного гида. Организую логистику под ключ или работаю с Вашим оператором в Непале.
 
     - heading: Путешествия на заказ
-      image: /img/svg/custom-tours.svg
+      image: /img/svg/sprite-guide.svg#custom-tours
       text: Для компании друзей, клубов и других организованных групп. Любого уровня сложности. На особых условиях.
 
     - heading: Только нужные Вам услуги
-      image: /img/svg/logistics.svg
+      image: /img/svg/sprite-guide.svg#logistics
       text: Консультации и логистическое обеспечение Вашего путешествия. Треккинги, экспедиции, восхождения. Только нужные Вам услуги.
 
 # main:
