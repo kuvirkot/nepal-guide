@@ -1,66 +1,27 @@
 <head>
 
-	<title>{{ .Title }}</title>
+	<title>{{ .Title }} | Kaldi</title>
 	<link rel="stylesheet" href="/css/main.css" />
-	<!-- {{ if .Params.styleUrl }}
-	<link rel="stylesheet" href="{{ .Params.styleURL }}" />    
-	 {{ end }} -->
-	 {{ if .Params.style }}
-	 {{ range .Params.style }}
-	 <link rel="stylesheet" href="{{ .styleURL }}" />  
-	 {{ end }}
-	 {{ end }}
-
-	 {{ if .Params.image }}
-	 <style type="text/css">
-		
-	/* 600px image */
-		.head-banner-bg {
-			background-image: url('{{ .Params.image }}');
-		} 
-  	
-	  /* 1000px image	   */
-		{{ if .Params.imageM }}
-	  @media (min-width: 600px) {
-		  .head-banner-bg {
-			background-image: url('{{ .Params.imageM }}');
-		  }
-		}
-	  {{end}}
-    
-	/* 1440px image	   */
-	  {{ if .Params.imageL }}
-		@media (min-width: 1000px) {
-		  .head-banner-bg {
-			background-image: url('{{ .Params.imageL }}');
-		  }
-		}
-		{{end}}
-	  </style>
-
-{{end}}
-
 
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
 
 	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/img/logo/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="/img/logo/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/img/logo/favicon-16x16.png" sizes="16x16">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="/manifest.json">
-	<link rel="mask-icon" href="/img/logo/logo.svg" color="#ff4400">
+	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400">
 	<meta name="theme-color" content="#fff">
 
 	<!-- Open Graph -->
 	<meta property="og:type" content="business.business">
-	<meta property="og:title" content="Ваш гид в Непале | Треккинги, Экспедиции, Восхождения">
+	<meta property="og:title" content="Kaldi | Great coffee with a conscience">
 	<meta property="og:url" content="/">
-	<meta property="og:image" content="/logo/img/og-image.png">
+	<meta property="og:image" content="/img/og-image.jpg">
 
-	<!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
-
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>

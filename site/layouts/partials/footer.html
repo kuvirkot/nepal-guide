@@ -4,9 +4,9 @@
 
 		<div class="measure-narrow center mb4">
 
-			<img src="/img/logo/logo.svg" alt="Ваш гид в Непале - трекинги,экспедиции,восхождения" class="db w4 center mb4 br0">
-			<p class="f3 lh-title light-gray b tc mb2">Новости сайта</p>
-			<p>Новые статьи, туры, приглашения в путешествия.</p>
+			<img src="/img/logo.svg" alt="Kaldi logo" class="db w4 center mb4 br0">
+			<p class="f3 lh-title light-gray b tc mb2">Newsletter subscribe</p>
+			<p>Get awesome news from us in your inbox every two weeks. Be the first to learn about new products.</p>
 
 			{{ partial "newsletter-form" . }}
 
@@ -15,44 +15,31 @@
 		<div class="flex-ns justify-between">
 
 			<div>
-				<h3 class="f4 b lh-title mb1 primary">Ваш гид в Непале</h3>
+				<h3 class="f4 b lh-title mb1 primary">Kaldi</h3>
 				<ul class="mb3">
-					<!-- <li><a href="/" class="link">Home</a></li> -->
-					<li><a href="/guide" class="link">Услуги</a></li>
-					<li><a href="/tours" class="link">Гид</a></li>
-					<li><a href="/blog" class="link">Блог</a></li>
-					<li><a href="/contact" class="link">Контакты</a></li>
+					<li><a href="/" class="link">Home</a></li>
+					<li><a href="/products" class="link">Our products</a></li>
+					<li><a href="/values" class="link">About</a></li>
+					<li><a href="/post" class="link">Blog</a></li>
+					<li><a href="/contact" class="link">Contact</a></li>
 				</ul>
 			</div>
 
-			<!-- <div>
+			<div>
 				<h3 class="f4 b lh-title mb1 primary">Find out more</h3>
 				<ul class="mb3">
-					<li><a href="/blog/jamaica-blue/" class="link">Latest offers</a></li>
+					<li><a href="/post/jamaica-blue/" class="link">Latest offers</a></li>
 					<li><a href="/contact" class="link">Schedule and appointment</a></li>
 				</ul>
-			</div> -->
+			</div>
 
 			<div>
-				<h3 class="f4 b lh-title mb2 primary">Социальные сети</h3>
+				<h3 class="f4 b lh-title mb2 primary">Social media</h3>
 				<ul class="mhn2">
-					{{ partial "social-icon" (dict "link" "https://www.facebook.com/alexeyulyanov.ru" "svg" "icons-facebook") }}
-					{{ partial "social-icon" (dict "link" "https://vk.com/kuvirkot" "svg" "icons-vk") }}
-					{{ partial "social-icon" (dict "link" "https://t.me/joinchat/EtUF_w4R_pVz6-RETGwd4g" "svg" "icons-telegram") }}
-					{{ partial "social-icon" (dict "link" "https://www.instagram.com/kuvirkot/" "svg" "icons-instagram") }}
-					{{ partial "social-icon" (dict "link" "https://www.linkedin.com/in/alexeyulyanov/" "svg" "icons-linkedin") }}
-					{{ partial "social-icon" (dict "link" "https://twitter.com/_alexeyulyanov" "svg" "icons-twitter") }}
-					{{ partial "social-icon" (dict "link" "https://www.youtube.com/alexeyuliyanov" "svg" "icons-youtube") }}
-					<!-- {{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }} -->
-					<!-- {{ partial "social-icon" (dict "link" "mailto:alexey@uliyanov.com" "svg" "icons-gmail") }} -->
-					<!-- <li class="dib ph2 raise">
-						<a href="viber://chat?number=79107981028" class="link bg-white black db relative br-100 pa2">
-						  <svg width="16px" height="16px" class="db">
-							<use xlink:href="#icons-viber"></use>
-						  </svg>
-						</a>
-					</li> -->
-					<!-- {{ partial "social-icon" (dict "link" "https://wa.me/79107981028" "svg" "icons-whatsapp") }} -->
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram") }}
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }}
 				</ul>
 			</div>
 
@@ -63,16 +50,7 @@
 
 {{ partial "svg" . }}
 
-
-
-{{ if .Params.script }}
-{{ range .Params.script }}
-<script src="{{ .scriptURL }}"></script>
-{{ end }}
-{{ end }}
-
-<!-- <script src="/app.js"></script> -->
-
+<script src="/app.js"></script>
 
 </body>
 
