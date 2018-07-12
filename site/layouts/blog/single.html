@@ -13,7 +13,8 @@
 
     {{ if .Params.youtube }} 
     <div class="w-100 dib mw9 br1 aspect-ratio aspect-ratio--16x9">
-    <iframe class="video aspect-ratio--object cover" src="http://www.youtube.com/embed/{{ .Params.youtube }}" frameborder="0" allowfullscreen></iframe>
+    <iframe class="aspect-ratio--object cover" src="http://www.youtube.com/embed/{{ .Params.youtube }}" frameborder="0" allowfullscreen></iframe>
+    <iframe class="aspect-ratio--object cover" width="560" height="315" src="https://www.youtube.com/embed/s4wIsH5e3GQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/s4wIsH5e3GQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     {{ end }}
