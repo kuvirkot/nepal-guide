@@ -20,6 +20,8 @@ tags: ["Мера пик", "регион Дхаулагири", "регион М�
 #   - scriptURL: /js/lity.min.js
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s4wIsH5e3GQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 В фильме использованы сьемки:
 
 * экспедиции вокруг Дхаулагири
