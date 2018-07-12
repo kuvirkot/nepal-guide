@@ -12,6 +12,8 @@ import svgmin from "gulp-svgmin";
 import inject from "gulp-inject";
 import cssnano from "cssnano";
 
+const purgecss = require('gulp-purgecss')
+
 const browserSync = BrowserSync.create();
 const hugoBin = `./bin/hugo.${process.platform === "win32" ? "exe" : process.platform}`;
 const defaultArgs = ["-d", "../dist", "-s", "site"];
@@ -32,9 +34,22 @@ gulp.task("css", () => (
       cssnext(),
       cssnano(),
     ]))
+    
+    .pipe(purgecss({
+      content: ["dist/*.html", "dist/*/*.html", "dist/*/*/*.html", "dist/*/*/*/*.html"]
+  }))
+
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
+
+// gulp.task('purgecss', () => {
+//   return gulp.src('dist/css/main.css')
+//       .pipe(purgecss({
+//           content: ["dist/*.html"]
+//       }))
+//       .pipe(gulp.dest('dist/css'))
+// })
 
 gulp.task("cms-assets", () => (
   gulp.src("./node_modules/netlify-cms/dist/*.{woff,eot,woff2,ttf,svg,png}")
