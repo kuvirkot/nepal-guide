@@ -10,6 +10,13 @@
       <time>{{ .Date.Format " 2 Jan, 2006" }}</time>
       <time>на чтение {{ .ReadingTime }} мин.</time>
     </div>
+
+    {{ if .Params.youtube }} 
+    <div class="w-100 dib mw9 br1 aspect-ratio aspect-ratio--16x9">
+    <iframe class="video aspect-ratio--object cover" src="http://www.youtube.com/embed/{{ .Params.youtube }}" frameborder="0" allowfullscreen></iframe>
+    </div>
+    {{ end }}
+
     {{ if .Params.image }}
     <figure class="pv3">
       <picture>
