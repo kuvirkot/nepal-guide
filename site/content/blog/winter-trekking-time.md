@@ -18,7 +18,7 @@ tags: ["треккинг"]
 Но, что немаловажно и являеться явным преимуществом этого времени года, туристов зимой значительно меньше, чем осенью и весной.
 
 
-<figure class="pv3">
+<figure class="pv3 mw6 center">
 <picture>
 <source media="(min-width: 80em)" srcset="/img/blog/2018/sagarmatha-statistic-660px.jpg">
 <source media="(min-width: 30em)" srcset="/img/blog/2018/sagarmatha-statistic-660px.jpg">

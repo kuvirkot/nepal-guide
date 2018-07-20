@@ -26,7 +26,7 @@ tags: ["экспедиция", "регион Аннапурна", "регион 
 
 Разделенный глубоким ущельем реки Мьягди Кхола Myagdi Khola) огромный массив Дхаулагири защищает бесплодные земли Долпо (Dolpo) от влажных муссонов. Благодаря уникальному месторасположению, на западе от основной группы высочайших гор, массив Дхаулагири генерирует свою собственную систему погодных условий.
 
-<figure class="pv3">
+<figure class="pv3 mw7 center">
 <picture>
   <source media="(min-width: 80em)" srcset="/img/blog/2018/along-river-to-gorge-660px.jpg">
   <source media="(min-width: 30em)" srcset="/img/blog/2018/along-river-to-gorge-500px.jpg">
@@ -44,7 +44,7 @@ tags: ["экспедиция", "регион Аннапурна", "регион 
 
 ## Вокруг Дхаулагири
 
-<figure class="pv3">
+<figure class="pv3 mw7 center">
 <picture>
 <source media="(min-width: 80em)" srcset="/img/blog/2018/alpine-meadow-660px.jpg">
 <source media="(min-width: 30em)" srcset="/img/blog/2018/alpine-meadow-500px.jpg">
@@ -79,7 +79,7 @@ class="br1 w-100"/>
 
 
 
-<figure class="pv3">
+<figure class="pv3 mw7 center">
 <picture>
 <source media="(min-width: 80em)" srcset="/img/blog/2018/muri-village-660px.jpg">
 <source media="(min-width: 30em)" srcset="/img/blog/2018/muri-village-500px.jpg">

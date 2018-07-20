@@ -8,7 +8,7 @@ image:       /img/blog/2018/resilient-trail-660px.jpg
 imagesmall:  /img/blog/2018/resilient-trail-300px.jpg
 figcaption: Указатель на альтернативной тропе
 alt: Указатель на альтернативной тропе
-tags: ["регион Манаслу", "", "",]
+tags: ["регион Манаслу"]
 
 # layout: 
 # individual page style if need /css/name.css

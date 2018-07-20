@@ -138,4 +138,31 @@ img {
 	image-rendering: -o-pixelated;
 	image-rendering: pixelated;
   }
-  
+
+  figure.image-grid-2 {
+	margin-bottom: 2rem; 
+	display: grid;
+	grid-gap: 1px;
+	grid-template-areas:
+        "image1 image2"
+        "figcaption figcaption";
+}  
+
+figure.image-grid-3 {
+	margin-bottom: 2rem; 
+	display: grid;
+    grid-template-areas:
+        "image1 image2 image3"
+        "figcaption figcaption figcaption";
+}
+
+figcaption {
+    grid-area: figcaption;
+}
+
+iframe {
+	/* width: 32rem; */
+	margin-left: auto;
+	margin-right: auto;
+	/* max-width: 32rem; */
+}

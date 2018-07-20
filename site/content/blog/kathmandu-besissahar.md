@@ -33,7 +33,7 @@ tags: ["регион Аннапурна", "треккинг"]
 
 ### В кузове джипа
 
-<figure class="pv3">
+<figure class="pv3 mw7 center">
 <picture>
 <source media="(min-width: 80em)" srcset="/img/blog/2018/jeep-to-chame-660px.jpg">
 <source media="(min-width: 30em)" srcset="/img/blog/2018/jeep-to-chame-500px.jpg">

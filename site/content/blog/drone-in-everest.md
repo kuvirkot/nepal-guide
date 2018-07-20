@@ -13,7 +13,7 @@ alt: квадрокоптер на фоне Гималайских гор
 
 Перед взлетом в Лукле или Намче или еще где то, в тех краях, следует связываться с диспетчерской аэропорта Луклы, чтобы согласовать полет, так как в горах много вертолетов и самолетов.
 
-<figure class="pv3">
+<figure class="pv3 mw6 center">
 <picture>
 <source media="(min-width: 80em)" srcset="/img/blog/2018/not-use-drones-660px.jpg">
 <!-- <source media="(min-width: 30em)" srcset="/img/blog/2018/not-use-drones-660px.jpg"> -->

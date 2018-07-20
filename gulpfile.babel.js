@@ -24,8 +24,13 @@ if (process.env.DEBUG) {
 
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
-gulp.task("build", ["css", "js", "cms-assets", "hugo"]);
-gulp.task("build-preview", ["css", "js", "cms-assets", "hugo-preview"]);
+gulp.task("build", ["custom-js", "css", "js", "cms-assets", "hugo"]);
+gulp.task("build-preview", ["custom-js", "css", "js", "cms-assets", "hugo-preview"]);
+
+gulp.task('custom-js', function() {
+  return gulp.src('./src/js/custom-js/*.js')
+  .pipe(gulp.dest('./dist/js'));
+  });
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
@@ -86,7 +91,7 @@ gulp.task("svg", () => {
     .pipe(gulp.dest("site/layouts/partials/"));
 });
 
-gulp.task("server", ["hugo", "css", "cms-assets", "js", "svg"], () => {
+gulp.task("server", ["hugo", "custom-js", "css", "cms-assets", "js", "svg"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"

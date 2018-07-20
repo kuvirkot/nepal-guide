@@ -23,7 +23,8 @@ tags: ["регион Эверест"]
 539 восхождений совершено женщинами.</p>
 <p>Непальская сторона более популярна, при схожей статистике безопасности.</p>
 
-<div class="pa4">
+
+<div class="pa4 mw6 center">
 <div class="overflow-auto">
 <table
   class="f7 w-100"
@@ -103,7 +104,7 @@ tags: ["регион Эверест"]
 <p>А самым безопасным восьмитысячником является Чо Ойю. 3 681 восхождений/50 смертей.</p>
 
 
-<div class="pa4">
+<div class="pa4 mw6 center">
 <div class="overflow-auto">
 <table
   class="f7 w-100"
