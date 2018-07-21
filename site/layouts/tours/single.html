@@ -141,10 +141,15 @@
      <figcaption class="f6 grey-3 tc">{{ .Params.figcaption }}</figcaption>
 		 {{ end }}
 
-		 <aside class="tc">
-				<a href="#request" class="f6 ttu b tracked ph4 pv3 mt3 dib link no-underline br-pill dim bg-primary ba b--near-white white">отправить запрос</a>
+			 <aside class="tc">
+				<a href="#request" class="f6 ttu b tracked ph4 pv3 mt3 dib link no-underline br-pill dim bg-primary ba b--near-white white">
+						{{ if .Params.btn }}
+					{{.Params.btn }}
+					{{else}}Записаться / задать вопрос
+					{{ end }}
+				</a>
 			</aside>
-	
+		
     </figure>
 		{{ end }}
 
