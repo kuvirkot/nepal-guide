@@ -169,15 +169,15 @@ iframe {
 
 /* #tour-title  */
 
-input#tour-title{
+/* input#tour-title{
 	background-color: var(--highlight);
-}
+} */
 
-input#tour-title::placeholder{
+/* input#tour-title::placeholder{ */
 	/* background-color: var(--highlight); */
 	/* color:var(--lightest-blue); */
 	/* padding-left: 2em; */
 	/* padding-right: 1rem */
-	border-radius:0.25em; 
+	/* border-radius:0.25em; 
+} */
 
-}
