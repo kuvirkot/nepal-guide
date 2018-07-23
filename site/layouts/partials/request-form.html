@@ -1,0 +1,64 @@
+<!-- Contact -->
+
+<div class="mb4">
+  <h4 class="f3 b lh-title mb3 tc">
+    {{ if .Params.btn }}
+    {{.Params.btn }}
+    {{else}}Записаться / задать вопрос
+    {{ end }}
+  </h4>
+
+  <fieldset>
+    <input type="text" id="tour-title" name="tour-title"  disabled placeholder="{{.Params.title }}" class="w-100 mb2">
+  </fieldset>
+    
+
+  <form action="/success/" netlify>
+    <div class="flex-l mhn1-l">
+          <!-- Name -->
+      <div class="ph1-l w-50-l">
+        <fieldset>
+          <input type="text" id="yourname" name="yourname" placeholder="Имя" class="w-100 mb2">
+          <label for="yourname">Имя</label>
+        </fieldset>
+      </div>
+          <!-- Email -->
+      <div class="ph1-l w-50-l">
+        <fieldset>
+          <input type="email" name="email" id="email" placeholder="Email" class="w-100 mb2">
+          <label for="email">Email</label>
+        </fieldset>
+      </div>
+    </div>
+
+        <!-- Message -->
+    <fieldset>
+      <textarea name="name" placeholder="Текст сообщения" rows="8" cols="80" id="message" class="w-100"></textarea>
+      <label for="message">Введите текст сообщения</label>
+    </fieldset>
+        <!-- Button -->
+    <div class="tc">
+      <button type="submit" class="btn w-100 w-auto-ns raise">Отправить</button>
+    </div>
+  </form>
+</div>
+
+<div class="center mw6 pv3">
+    <h3 id="contact" class="f6 lh-title mb2 tc">или свяжитесь другим, удобным для Вас способом</h3>
+    <ul class="mhn2 tc primary">
+    {{ partial "social-icon-contact-form" (dict "link" "mailto:alexey@uliyanov.com" "svg" "icons-gmail") }}
+      <li class="dib ph2 raise">
+        <a href="viber://chat?number=79107981028" class="link bg-white black db relative br-100 pa2">
+          <svg width="16px" height="16px" class="db">
+          <use xlink:href="#icons-viber" class="primary"></use>
+          </svg>
+        </a>
+        </li>
+      {{ partial "social-icon-contact-form" (dict "link" "https://wa.me/79107981028" "svg" "icons-whatsapp") }}
+      {{ partial "social-icon-contact-form" (dict "link" "https://www.facebook.com/alexeyulyanov.ru" "svg" "icons-facebook") }}
+      {{ partial "social-icon-contact-form" (dict "link" "https://vk.com/kuvirkot" "svg" "icons-vk") }}
+      {{ partial "social-icon-contact-form" (dict "link" "https://t.me/joinchat/EtUF_w4R_pVz6-RETGwd4g" "svg" "icons-telegram") }}
+
+
+    </ul>
+  </div>
