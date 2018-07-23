@@ -8,12 +8,10 @@
     {{ end }}
   </h4>
 
-  <fieldset>
-    <input type="text" id="tour-title" name="tour-title"  disabled placeholder="{{.Params.title }}" class="w-100 mb2">
-  </fieldset>
-    
-
   <form name="request" action="/success/" netlify>
+    <fieldset>
+      <input type="text" id="tour-title" name="tour-title"  disabled placeholder="{{.Params.title }}" class="w-100 mb2">
+    </fieldset>
     <div class="flex-l mhn1-l">
           <!-- Name -->
       <div class="ph1-l w-50-l">
