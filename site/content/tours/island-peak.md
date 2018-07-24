@@ -43,8 +43,8 @@ map:       /img/tours/island-peak-map-1100px.jpg
 mapmedium: /img/tours/island-peak-map-660px.jpg
 mapsmall:  /img/tours/island-peak-map-300px.jpg
 
-altitude: /img/tours/everest-altitude-chart.svg
-altitudesmall: /img/tours/everest-altitude-chart-small.svg
+# altitude: /img/tours/everest-altitude-chart.svg
+# altitudesmall: /img/tours/everest-altitude-chart-small.svg
 
 textsection:
   - heading: 
