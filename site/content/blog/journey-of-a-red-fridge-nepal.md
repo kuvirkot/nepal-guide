@@ -3,12 +3,12 @@ type: "blog"
 title: Путешествие красного холодильника в Непале
 date: 2017-05-29
 description: «Путешествие красного холодильника в Непале» — относительно свежий (2007 год) и очень интересный, и познавательный фильм о повседневной жизни простых жителей Непала.
-image:       /img/blog/2018/quest-in-nepal-768x526.jpg
-# imagemedium: /img/blog/2018/skat-660px.jpg
-imagesmall:  /img/blog/2018/quest-in-nepal-300.jpg
-figcaption: Защелка с фигуркой Ганеша.
-alt: защелка на двери с фигурой Ганеша.
-tags: [""]
+image:       /img/blog/2018/red-fridge-in-nepal-660px.jpg
+imagemedium: /img/blog/2018/red-fridge-in-nepal-500px.jpg
+imagesmall:  /img/blog/2018/red-fridge-in-nepal-300px.jpg
+figcaption: красный холодильник на дорогах Аннапурны
+alt: портер несет красный холодильник вокруг Аннапурны
+tags: ["видео"]
 
 # layout: 
 # individual page style if need /css/name.css
