@@ -1,5 +1,11 @@
 <a href="{{ .Permalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
 	<h2 class="f3 b lh-title mb1 primary">{{ .Title }}</h2>
+	{{ if .Params.subtitile }} 
+    <!-- <h2 class="f4 f3-l b di lh-title mb3 white mw6 bg-lightest-blue"> -->
+    <h2 class="f5 f4-l primary b lh-title mb3 center mw7">
+     {{ .Params.subtitile }}
+    </h2>
+      {{ end }}
 	<p class="mid-gray lh-title mb2">{{ .Date.Format "2 Jan, 2006" }}</p>
 	<p class="mb0">{{ .Description }}</p>
 	<p class="link b dib black mb0">Читать →</p>
