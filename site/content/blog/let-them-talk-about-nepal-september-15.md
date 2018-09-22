@@ -39,7 +39,9 @@ layout: let-them-talk
 
 Микроавтобусы из Покхары в Катманду ходят с 5 утра до 17 часов вечера, каждые пол часа. Время и интервал примерные, с поправкой на непальскую реальность. 
 Стоимость места - 500 рупий. 
+<section class="iframe-container mw7 center">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.8986838125693!2d83.98469291507317!3d28.210390632586304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb9562ebec135697a!2sMicro+Bus+Ticket+Counter%2C+Nayabazar+Rd%2C+Pokhara+33700%2C+Nepal!5e0!3m2!1sen!2sru!4v1537125990105" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
 
 ### Ночной автобус
 
@@ -93,7 +95,10 @@ layout: let-them-talk
 ### Коттеджи в Покхаре
 
 В районе Happy village в Покхаре сдаются отдельные коттеджи. 
+
+<section class="iframe-container mw7 center">
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14062.337404881479!2d83.94032555186769!3d28.219938275189588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x82beefd18db11add!2sHappy+Village!5e0!3m2!1sen!2sru!4v1537126199640" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
 
 * Коттеджи 1-но и 2-х комнатные;
 
