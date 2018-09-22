@@ -1,6 +1,14 @@
 <head>
 
-	<title>{{ .Title }}</title>
+	<title>{{ .Title }}
+		{{ if .Params.titleItems }}
+			{{ range .Params.titleItems }}
+		  {{ .text }}
+    {{ end }}
+		{{ end }}
+
+
+	</title>
 	<link rel="stylesheet" href="/css/main.css" />
 	<!-- {{ if .Params.styleUrl }}
 	<link rel="stylesheet" href="{{ .Params.styleURL }}" />    

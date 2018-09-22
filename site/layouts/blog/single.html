@@ -11,13 +11,8 @@
     </h2>
       {{ end }}
 
-      <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-        Article publié le {{ .Date.Day }} {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }} (dernière modification le {{ .Lastmod.Day }} {{ index $.Site.Data.mois (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }})
-      </time>
-
-
-    <div class="flex f6 mw7 center justify-between grey-3 mt4">
-      <time>{{ .Date.Format " 2 Jan, 2006" }}</time>
+     <div class="flex f6 mw7 center justify-between grey-3 mt4">
+      <time>{{ .Date.Day }} {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}</time>
       <time>на чтение {{ .ReadingTime }} мин.</time>
     </div>
 

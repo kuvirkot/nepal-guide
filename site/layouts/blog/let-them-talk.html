@@ -18,8 +18,7 @@
     </div>
 
    <h1 class="db lh-copy black-70 mv3 mw7 bg-lightest-blue center tl pv4 ph3 br1">
-    <span class="tracked">В этом выпуске обсуждают:</span>  
-    {{ range .Params.titleItems }}
+     {{ range .Params.titleItems }}
       <span class="primary">#</span>{{ .text }}
       {{ end }}
     </h1>
