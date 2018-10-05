@@ -1,14 +1,14 @@
 ---
 type: "blog"
 title: Взобновление перелетов Катманду - Тапледжунг
-date: 2017-01-13
+date: 2018-10-05
 description:  Непльские Авиалинии и Summit Air обьявили расписание перелетов в Тапледжунг
-image:       /img/blog/2018/international-airport-construction-660px.jpg
-imagemedium: /img/blog/2018/international-airport-construction-660px.jpg
-imagesmall:  /img/blog/2018/international-airport-construction-300px.jpg
-figcaption: Началось строительства международного аэропорта в Покхаре
-alt: Тяжелая техника, используемая для строительства международного аэропорта в Покхаре.
-tags: ["Покхара"]
+# image:       /img/blog/2018/international-airport-construction-660px.jpg
+# imagemedium: /img/blog/2018/international-airport-construction-660px.jpg
+# imagesmall:  /img/blog/2018/international-airport-construction-300px.jpg
+# figcaption: Началось строительства международного аэропорта в Покхаре
+# alt: Тяжелая техника, используемая для строительства международного аэропорта в Покхаре.
+tags: ["регион Канченджанга", "регионМакалу"]
 
 # layout: 
 # individual page style if need /css/name.css
